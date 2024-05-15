@@ -38,5 +38,11 @@
                FontSize="18"
                BackgroundColor="Pink"
                HorizontalTextAlignment="Center" />
+
+        <Button
+x:Name="CounterBtn"
+Text="Ir a Absolute Layout" 
+SemanticProperties.Hint="Se dirige a AbsoluteLayout"
+Clicked="OnFinalButtonClick" />
     </FlexLayout>
 </ContentPage>
