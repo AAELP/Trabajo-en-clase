@@ -39,16 +39,20 @@
         <BoxView Grid.Row="2"
                  Grid.ColumnSpan="2"
                  Color="Red" />
-        <Label Grid.Row="2"
-               Grid.ColumnSpan="2"
-               Text="Row 2, Columns 0 and 1"
-               HorizontalOptions="Center"
-               VerticalOptions="Center"/>
-        <Button
-                x:Name="ReturnBtn"
+        <AbsoluteLayout  HorizontalOptions="Center"  VerticalOptions="Center" 
+             Grid.Row="2"
+             Grid.ColumnSpan="2">
+            <Label
+                Text="Absolute Layout"/>
+            <Button
+                x:Name="CounterBtn"
                 Text="Click me" 
                 SemanticProperties.Hint="Counts the number of times you click"
-                Clicked="OnFinalButtonClick"
-                HorizontalOptions="Fill" />
+                Clicked="OnFinalButtonClick"/>
+
+        </AbsoluteLayout>
+
+
+
     </Grid>
 </ContentPage>
